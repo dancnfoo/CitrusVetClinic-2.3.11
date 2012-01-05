@@ -1,0 +1,28 @@
+<% content_for :sidemenu do %>
+  <%= render "new_client_sidemenu" %>
+<% end %>
+<div id="copy">
+  <h1>New Clients</h1>
+  <p>
+    Citrus Veterinary Clinic is happy to accept new clients. We encourage 
+    our current clients to refer their friends and family. Our veterinarians 
+    and staff have a long-standing reputation for providing real value, quality 
+    medicine and surgeries, and advance diagnostics.We are happy to have you 
+    request any one of our veterinarians.
+  </p>
+  <p>
+    For your first visit, please bring your pet’s current vaccination records, 
+    any problems or concerns you may have, and contact information for your 
+    previous veterinarian so we may obtain copies of your pet’s records
+  </p>
+  <p>
+    Please call us at <strong>(909) 596-1881</strong> for an appointment. 
+    Complete the <%= link_to "New Client Form", "#.pdf", :alt => "New Client Form" %>
+    and bring it to your pet’s first visit.
+  </p>
+  <p>
+    We are located at 2317 Foothill Blvd., La Verne, CA 91750. Visit the 
+    <%= link_to "Contact Us", contact_path, :alt => "Contact Us" %> page for a map 
+    and directions to our hospital.
+  </p>
+</div>

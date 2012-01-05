@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+/* HTML Defaults */
+
+body {
+	font-family: Arial, Helvetica, Verdana, sans-serif;
+	color: #00214c;
+	font-size: 100%;
+	margin: 0;
+	padding: 0;
+}
+a {
+	text-decoration: none;
+	color: #a11900;
+}
+a:hover, a:focus {
+	text-decoration:underline;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+	text-transform: uppercase;
+	color: #701200;
+}
+h1 {
+	font-size: 150%;
+	line-height: 1.1em;
+	margin: .2em 0;
+}
+h2 {
+	font-size: 130%;
+	line-height: 1.2em;
+}
+h3 {
+	font-size: 130%;
+}
+h4 {
+	font-size: 120%;
+}
+h5, h6 {
+	font-size: 100%;
+	line-height: 1.3em;
+}
+
+img {
+	vertical-align: middle;
+	border: none;
+}
+hr {
+	color: #024270;
+	background: #024270;
+	height: 1px;
+	padding: 0;
+	border: none;
+}
+fieldset {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+input, select, textarea {
+	font: 100%/1.2em 'PT Sans', Arial, Helvetica, sans-serif;
+	vertical-align: middle;
+}
+input[type=submit], input[type=reset], button, .button {
+	color: #fff;
+	background: #7691a4;
+	display: inline-block;
+	padding: 4px 10px;
+	border: none;
+	cursor: pointer;
+	border: solid 1px #fff;
+}
+input[type=submit]:hover, input[type=reset]:hover, button:hover, .button:hover, input[type=submit]:focus, input[type=reset]:focus, button:focus, .button:focus {
+	text-decoration: none;
+	color: #fff;
+	background: #427694;
+}
+
+
+#nav {
+	display:none;	
+}

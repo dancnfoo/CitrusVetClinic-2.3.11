@@ -1,0 +1,35 @@
+<% content_for :sidemenu do %>
+  <%= render "health_sidemenu" %>
+<% end %>
+<div id="copy">
+  <h1>Pet Health</h1>
+  <p>
+    Preventative medicine is our goal at Citrus Veterinary Clinic. The more your know 
+    about your pet, the better equipped you will be to meet your pet’s needs. Here are 
+    some useful information put together for you:
+  </p>
+  <p>
+    <strong>A. Puppy &amp; Kitten Care</strong> - We would love the opportunity to meet 
+    with your new family member. Please see our 
+    <%= link_to "Puppy &amp; Kitten Care", puppy_kitten_path, :alt =>"Puppy &amp; Kitten Care" %>
+    page for information on how to take care of your new companion.
+  </p>
+  <p>
+    <strong>B. Pet Vaccinations</strong> - Vaccinations help to combat diseases. Our doctors 
+    will help you decide which vaccines are appropriate for your pet’s risk factors. Find 
+    out what vaccinations are available to your pet on our 
+    <%= link_to "Pet Vaccinations", vaccination_path, :alt => "Pet Vaccination" %> page.
+  </p>
+  <p>
+    <strong>C. Senior Pet Care</strong> - As your pet ages, normal changes take place and 
+    incidence of age-related diseases increase. Our 
+    <%= link_to "Senior Pet Care", senior_path, :alt => "Senior Pet Care" %>
+    page gives your more information of what to expect as your pet gets older.
+  </p>
+  <p>
+    Visit our informative pages of 
+    <%= link_to "Pet Care Articles", articles_path, :alt => "Pet Care Articles" %>
+    and <%= link_to "Pet Care Videos", videos_path, :alt => "Pet Care Videos" %> 
+    on a variety of pet care related topics.        
+  </p>
+</div>

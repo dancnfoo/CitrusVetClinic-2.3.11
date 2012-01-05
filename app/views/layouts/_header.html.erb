@@ -1,0 +1,82 @@
+<div id=<%= @header_id %>>
+  <div id="logo">
+    <p><%= link_to "Citrus Veterinary Clinic", root_path, :title => "Citrus Veterinary Clinic", :class => "log" %></p>
+  </div>
+  
+  <div id="nav">
+    <div id="topNav">
+<!--       <div id="topNavLH"></div> -->
+      <ul>
+        <li class="first <%= link_class(service_path) %>"><%= link_to "Veterinary Services", service_path, :title => "Veterinary Services" %>
+          <ul>
+            <li><%= link_to "Comprehensive Examinations", examination_path, :title => "Comprehensive Examinations" %></li>
+            <li><%= link_to "Veterinary Surgery", surgery_path, :title => "Veterinary Surgery" %></li>
+            <li><%= link_to "Internal Medicine", internal_medicine_path, :title => "Internal Medicine" %></li>
+            <li><%= link_to "Pet Dental Care", dental_path, :title => "Pet Dental Care" %></li>
+            <li><%= link_to "Pain Management", pain_management_path, :title => "Pain Management" %></li>
+            <li><%= link_to "Veterinary Diagnotics", diagnostics_path, :title => "Veterinary Diagnostics" %></li>
+          </ul>
+        </li>
+        <li <%= link_class(health_path) %>><%= link_to "Pet Health", health_path, :title => "Pet Health"%>
+          <ul>
+            <li><%= link_to "Puppy & Kitten Care", puppy_kitten_path, :title => "Puppy &amp; Kitten Care"%></li>
+            <li><%= link_to "Pet Vaccinations", vaccination_path, :title => "Pet Vaccinations" %></li>
+            <li><%= link_to "Senior Pet Care", senior_path, :title => "Senior Pet Care" %></li>
+            <li><%= link_to "Pet Care Articles", articles_path, :title => "Pet Care Articles" %></li>
+            <li><%= link_to "Pet Care Videos", videos_path, :title => "Pet Care Videos" %></li>
+          </ul>
+        </li>
+        <li <%= link_class(pet_resource_path) %>><%= link_to "Pet Care Resources", pet_resource_path, :title => "Pet Care Resource" %>
+          <ul>
+            <li><%= link_to "Helpful Links", helpful_links_path, :title => "Helpful Links" %></li>
+          </ul>
+        </li>
+        <li <%= link_class(news_path) %>><%= link_to "News", news_path, :title => "News" %></li>
+        <li <%= link_class(payment_path) %>><%= link_to "Payment Options", payment_path, :title => "Payment Options" %>
+          <ul>
+            <li><%= link_to "Care Credit", care_credit_path, :title => "Care Credit" %></li>
+            <li><%= link_to "Forms of Payment", payment_forms_path, :title => "Forms of Payment" %></li>
+            <li><%= link_to "Pet Insurance", pet_insurance_path, :title => "Pet Insurance" %></li>
+          </ul>
+        </li>
+        <li <%= link_class(new_client_path) %>><%= link_to "New Clients", new_client_path, :title => "New Clients" %></li>
+      </ul>
+      
+<!--       <div id="topNavRH"></div> -->
+    </div>
+    <!-- END #topNav -->
+    
+    <div id="lowerNav">
+      <div id="homeNav">
+<!--         <div id="homeNavLH"></div> -->
+        <ul>
+          <li class="first <%= link_class(root_path) %>"><%= link_to "Home", root_path, :title => "Home" %></li>
+          <li <%= link_class(about_path) %>><%= link_to "About Us", about_path, :title => "About Us" %>
+            <ul>
+              <li><%= link_to "Veterinarians", vets_path, :title => "Veterinarians" %></li>
+              <li><%= link_to "Veterianrian Staff", staff_path, :title => "Veterinarian Staff" %></li>
+              <li><%= link_to "Our History", history_path, :title => "Our History" %></li>
+            </ul>
+          </li>
+          <li <%= link_class(contact_path) %>><%= link_to "Contact Us", contact_path, :title => "Contact Us" %></li>
+        </ul>
+        
+<!--         <div id="homeNavRH"></div> -->
+      </div>
+      <!-- END #homeNav -->
+      
+      <div id="emer">
+        <div id="emerRH"></div>
+        <div id="emerMid">
+          <% cross_img = image_tag("cross.png", :alt => "emergencies") %>
+          <p><%= link_to "Emergencies&nbsp;&nbsp;#{cross_img}", emergency_path, :title => "Emergencies" %></p>
+        </div>
+        <div id="emerLH"></div>
+      </div>
+      <!-- END #emer -->
+    </div>
+    <!-- END #lowerNav -->
+  </div>
+  <!-- END #nav -->
+</div>
+<!-- END #header -->

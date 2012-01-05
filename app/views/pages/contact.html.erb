@@ -1,0 +1,36 @@
+<% content_for :sidemenu do %>
+  <%= render "contact_sidemenu" %>
+<% end %>
+<div id="copy">
+  <h1>Contact Us</h1>
+  <p>
+    <div id="map">
+      <%= image_tag "map.jpg", :alt => "Map of Citrus Veterinary Clinic" %>
+    </div>
+  </p>  
+  <p>
+    Visit us today for quality veterinary care in La Verne CA
+  </p>
+  <p>
+    <div id="address">
+      Citrus Veterinary Clinic
+      <br/>
+      2317 Foothill Blvd.
+      <br/>
+      La Verne, CA 91750
+    </div>
+  </p>
+  <p>
+    <div>
+      Please call us at 909-596-1881
+      <br/>
+      Email: <%= mail_to "info@citrusvetclinic.com", "info@citrusvetclinic.com" %>
+    </div>
+  </p>
+  <p>
+    <div class="important">
+      <%= image_tag "facebook3.jpg", :alt => "Find Us on Facebook!" %>
+      <a href="http://www.facebook.com/pages/Citrus-Veterinary-Clinic/201780673165367" title="Find us on Facebook", target="_blank">Find Us on Facebook!</a>
+    </div>
+  </p> 
+</div>

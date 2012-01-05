@@ -1,0 +1,83 @@
+<% content_for :sidemenu do %>
+  <%= render "health_sidemenu" %>
+<% end %>
+<div id="copy">
+  <h1>Pet Vaccinations</h1>
+  <p>
+    Vaccines are designed to protect your pets against deadly and contagious diseases. 
+    Not all vaccines are given to all animals—while some pets will require several vaccines, 
+    others may require less. At Citrus Veterinary Clinic, every pet is given an individualized 
+    vaccination schedule based on the breed, age, health needs, and lifestyle.
+  </p>
+  
+  <h2>Dog and Cat Vaccines</h2>
+  <p>
+    The following charts offer some typical pet diseases and the vaccines we use to protect against them.  
+  </p>  
+  <table>
+    <thead>
+      <tr>
+        <th>Common Canine Diseases</th>
+        <th>Common Vaccines for Dogs</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <div><strong>Distemper</strong> — fatal virus affects the lungs, brain, and spinal cord</div>
+          <div><strong>Hepatitis</strong> — virus that affects the liver and can cause loss of vision</div>
+          <div><strong>Parainfluenza</strong> — virus that affects the respiratory system</div>
+          <div><strong>Parvovirus</strong> — attacks the intestinal tract and can damage the heart</div>
+        </td>
+        <td><strong>DHPP vaccine</strong> — distemper, hepatitis, parainfluenza, and parvovirus</td>
+      </tr>
+      <tr>
+        <td><strong>Rabies</strong> — fatal virus that infects the nervous system</td>
+        <td><strong>Rabies vaccine</strong></td>
+      </tr>
+      <tr>
+        <td><strong>Bordetella (Infectious Tracheobronchitis)</strong> — bacterial infection of the respiratory system</td>
+        <td><strong>Bordetella bronchiseptica vaccine</strong></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Common Feline Diseases</th>
+        <th>Common Vaccines for Cats</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Panleukopenia</strong> — virus also known as feline distemper and caused by feline parvovirus</td>
+        <td><strong>FVRCP vaccine</strong> — rhinotracheitis, calici virus, and panleukopenia</td>
+      </tr>
+      <tr>
+        <td>
+          <div><strong>Rhinotracheitis (FVR)</strong> — virus</div>
+          <div><strong>Calicivirus (FCV)</strong> — highly contagious virus that causes acute upper respiratory infection</div>
+        </td>
+        <td>???</td>
+      </tr>
+      <tr>
+        <td><strong>Feline leukemia</strong> — virus that suppresses the immune system</td>
+        <td><strong>Feline leukemia vaccine</strong></td>
+      </tr>
+      <tr>
+        <td><strong>Rabies</strong> — fatal virus that infects the nervous system</td>
+        <td><strong>Rabies vaccine</strong></td>
+      </tr>
+    </tbody>
+  </table>
+  <p>
+    Please remember that your pet may not receive all of these vaccines; this information 
+    is for general knowledge only, and your veterinarian will be pleased to discuss the 
+    specific needs of your dog or cat at your next visit.
+  </p>
+  <p>
+    For puppy and kitten vaccine schedule, please see 
+    <%= link_to "Puppy & Kitten Care", puppy_kitten_path, :alt => "Puppy & Kitten Care" %>
+  </p>
+</div>

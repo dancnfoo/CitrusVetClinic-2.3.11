@@ -1,0 +1,46 @@
+<% content_for :sidemenu do %>
+  <%= render "service_sidemenu" %>
+<% end %>
+<div id="copy">
+  <h1>Veterinary Services</h1>
+  <p>
+    Citrus Veterinary Clinic is a full service veterinary facility providing 
+    comprehensive medical, surgical and dental care.  
+  </p>
+  <p>
+    <strong>A. Comprehensive Examinations</strong> - Routine physical examination 
+    on your pet allows us to increase your pets chances of having a long and healthy 
+    life. Please find out more about our 
+    <%= link_to "Comprehensive Examination", examination_path, :alt => "Comprehensive Examination" %>.
+  </p>
+  <p>
+    <strong>B. Veterinary Surgery</strong> - We perform a wide variety of surgeries including 
+    spays, neuters, soft tissue, orthopedic and emergency surgeries. Details related to your 
+    pets’ surgery can be found on our 
+    <%= link_to "Veterinary Surgery", surgery_path, :alt => "Veterinary Surgery" %> page.
+  </p>
+  <p>
+    <strong>C. Internal Medicine</strong> - We offers services in all aspects of 
+    <%= link_to "Internal Medicine", internal_medicine_path, :alt => "Internal Medicine" %>.
+  </p>
+  <p>
+    <strong>D. Pet Dental Care</strong> - We are pleased to offer complete dental care services 
+    for your dogs and cats that include scaling, polishing and dental radiographs. Our 
+    <%= link_to "Pet Dental Care", dental_path, :alt => "Pet Dental Care" %>
+    page will give you more information on how to take care of your pets’ teeth.
+  </p>
+  <p>
+    <strong>E. Pain Management</strong> - Veterinary Patients experience pain and discomfort 
+    during different medical conditions like we do. We will discuss with you different options 
+    of pain management available tailored to the needs of your pet. Please visit our 
+    <%= link_to "Pain Management", pain_management_path, :alt => "Pain Management" %>
+    page for more details.
+  </p>
+  <p>
+    <strong>F. Diagnostic Services</strong> - Our in-house laboratory equipments, x-ray and ultrasound 
+    machine gives us the ability to quickly assess the status of any physical injuries and illness 
+    that your pet may be experiencing. See our 
+    <%= link_to "Diagnostic Services", diagnostics_path, :alt => "Diagnostics Services" %>
+    page to learn more on what we offer.
+  </p>
+</div>

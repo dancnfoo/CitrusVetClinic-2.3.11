@@ -1,0 +1,73 @@
+<div id="bodyWrap">
+  <div id="bar">
+    <div id="topBar">
+      <div id="contact">Contact Information:</div>
+      <div id="phone"><p>909-596-1881 &nbsp;&nbsp;/</p></div>
+      <div id="email"><p><%= mail_to "info@citrusvetclinic.com", "Send us an Email" %> &nbsp;&nbsp;/</p></div>
+      <div id="directions"><p><%= link_to "Get Directions", contact_path %></p></div>
+      <div id="social"><p><a href="http://www.facebook.com/pages/Citrus-Veterinary-Clinic/201780673165367" title="Find us on Facebook", target="_blank"></a></p></div>
+    </div>
+<!--     <div id="underBar"></div> -->
+  </div>
+  <!-- END #bar -->
+  
+  <div id="contentWrap">
+    <div id="content">
+      <div id="contentInner">
+        <div id="rightWrap">
+          <%= yield :sidemenu %>
+          <div id="button">
+            <div id="buttonInner">
+              <h2>HOURS OF OPERATION</h2>
+<!--               <%= image_tag("button-div.png", :alt => "Button") %> -->
+              <div>
+                <p>Mon, Tue, Thur, Fri</p>
+                <p>8:30 am- 5:30 pm</p>
+              </div>
+              <div>
+                <p>Wed, Sat</p>
+                <p>8:30 am- 12:00 pm</p>
+              </div>
+            </div>
+          </div>
+          <!--
+          <div id="petportal">
+            <div id="ppLog"><p><%= link_to "Log In", "#", :title => "Pet Portal" %></p></div>
+          </div>
+          -->
+        </div>
+        <!-- END #rightWrap -->
+        <%= yield %>
+      </div>
+      <!-- END #contentInner -->
+      
+      <div id=<%= @footer_id %>>
+        <div id="dogText">
+          <%= image_tag "bottom-dog.png", :class => "imageleft", :alt => "bulldog"%>
+          <p class="foot">Copyright &copy; <%= Time.new.year %> Citrus Veterinary Clinic. All rights reserved.</p>
+        </div>
+        <div id="bottom">
+          <div id="bottomSec1">
+            <% image_promo = image_tag("bottom-pic-1a.jpg", :class => "border", :size => "221x90") %>
+            <%= link_to image_promo, promotion_path, :title => "Promotion" %>
+            <%= image_tag("birdy.png", :class => "imageleft", :alt => "Promotion")%>
+            <h3><%= link_to "Promotions", promotion_path %></h3>
+            <p>Check out our promotions!</p>
+          </div>
+          <div id="bottomSec2">
+            <% image_news = image_tag("bottom-pic-2a.jpg", :class => "border", :size => "221x90", :alt => "Citrus News") %>
+            <%= link_to image_news, news_path, :title => "Citrus News" %>
+            <%= image_tag("housey.png", :class => "imageleft", :alt =>"Citrus News") %>
+            <h3><%= link_to "Citrus News", news_path %></h3>
+            <p>See what's happening at Citrus!</p>
+          </div>
+        </div>
+        <!-- END #bottom -->
+      </div>
+      <!-- END footer -->
+    </div>
+    <!-- END content -->
+  </div>
+  <!-- END contentWrap -->
+</div>
+<!-- END bodyWrap -->
