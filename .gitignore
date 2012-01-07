@@ -6,3 +6,5 @@ doc/
 *.swp
 *~
 .DS_Store
+.project
+.gitignore
