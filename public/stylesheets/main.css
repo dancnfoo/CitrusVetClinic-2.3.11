@@ -3,14 +3,13 @@
 /* HTML Defaults */
 
 body {
-	font: 90%/1.3em  Arial, sans-serif;
+	font: 100%/1.5em "Century Gothic", Arial, sans-serif;
 	color: #00214c;
 	margin: 0;
 	padding: 0;
 }
 
 body.page {
-/*	font: 88%/1.3em "Century Gothic", Arial, sans-serif;*/
 	color: #00214c;
 	background-color: #6D5035;
 	margin: 0;
@@ -30,6 +29,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
 h1, h2, h3, h4, h5, h6 {
 	font-weight: normal;
 }
+/*
 h1 {
 	font-size: 157%;
 	line-height: 1.2em;
@@ -56,7 +56,7 @@ h5 {
 h6 {
 	font-size: 86%;
 	line-height: 1.15em;
-}
+}*/
 img {
 	vertical-align: middle;
 	border: none;
@@ -146,7 +146,7 @@ input {
 /*	background : url(../images/logo.jpg) no-repeat top left;*/}
 
 #header #logo {
-	background : url(../images/logo.jpg) no-repeat top left;
+/*	background : url(../images/logo.jpg) no-repeat top left;*/
 }
 
 #logo a.log {
@@ -199,7 +199,7 @@ input {
 	list-style:none;
 	display:block;
 	height:16px;
-	background:url('../images/top-nav-divider.png') 0px 2px no-repeat;
+/*	background:url('../images/top-nav-divider.png') 0px 2px no-repeat;*/
 	margin-top:8px;
 	position:relative;
 }
@@ -291,7 +291,7 @@ input {
 	height:32px;
 	width:60%;
 	float:right;
-	margin-right:150px;
+	margin-right:120px;
 }
 
 
@@ -334,7 +334,7 @@ input {
 	margin:0;
 	padding:0;
 	font-size:110%;
-	padding: 6px 2px 0px 5px;
+	padding: 6px 6px 0px 9px;
 }
 
 #emer #emerMid a {
@@ -356,7 +356,7 @@ input {
 #homeNav {
 	height:32px;
 	float:left;
-	margin-left:150px;
+	margin-left:100px;
 }
 
 #homeNavLH {
@@ -376,9 +376,9 @@ input {
 	float:left;
 }
 
-#homeNav ul li {
+/*#homeNav ul li {
 	background:url('../images/home-nav-divider.png') 0px 2px no-repeat;
-}
+}*/
 
 #homeNav ul li a {
 	color:#00204b;
@@ -417,7 +417,7 @@ input {
 /*	width:1018px;*/
 /*	height:50px;*/
 /*	float:none;*/
-	margin-top:4px;
+	margin-top:2px;
 	margin-left:13px;	
 	}
 	
@@ -436,15 +436,15 @@ input {
 	font-size:130%;
 	font-weight:bold;
 	float:left;
-	margin-top:9px;
+	margin-top:8px;
 }
 
 #topBar #phone {
 	float:left;
-	background:url('../images/phone-icon.png') left 0px no-repeat;
+	background:url('../images/phone.png') left 2px no-repeat;
 	margin-right:25px;
 	margin-left:15px;
-	margin-top:5px;
+	margin-top:4px;
 }
 
 #topBar #social {
@@ -455,10 +455,10 @@ input {
 }
 
 #topBar #social a {
-	background:url('../images/fb_icon.png') left 0px no-repeat;
+	background:url('../images/facebook.png') left -1px no-repeat;
 	float:left;
-	width:26px;
-	height:25px;
+	width:30px;
+	height:30px;
 	display:block;
 	margin:-2px 8px 0 -26px;
 	padding:0;
@@ -466,21 +466,21 @@ input {
 
 #topBar #email {
 	float:left;
-	background:url('../images/email-icon.png') top left no-repeat;
-	margin-right:25px;
+	background:url('../images/email.png') left -1px no-repeat;
+	margin-right:23px;
 	margin-top:8px;	
 }
 
 #topBar #directions {
 	float:left;
-	background:url('../images/directions-icon.png') top left no-repeat;
+	background:url('../images/direction.png') left 0px no-repeat;
 	margin-right:25px;
-	margin-top:9px;
+	margin-top:5px;
 }
 
 #topBar p {
-	margin-left:25px;
-	font-size:130%;
+	margin-left:33px;
+	font-size:125%;
 	font-weight:bold;
 }
 
@@ -489,7 +489,7 @@ input {
 }
 
 #topBar a:hover {
-	color:#601102;
+	color:#ffb44e;
 	text-decoration:none;
 }	
 
@@ -503,6 +503,7 @@ input {
 }
 
 #topBar #directions p {
+	margin-top:3px;
 	margin-left:35px;
 }
 	
@@ -531,12 +532,11 @@ input {
 }
 
 
-
+/*
 #content p {
 	line-height:1.3em;
 	font-size:100%;
-}
-
+}*/
 #contentInner {
 	float:left;
 	padding:4px;
@@ -654,8 +654,8 @@ input {
 	width:193px;
 	float:right;
 	height:141px;
-	font-size:130%;
-	font-weight:bold;
+/*	font-size:130%;*/
+/*	font-weight:bold;*/
 	color:#F2F4D4;
 	background:url('../images/button-full.jpg') top left no-repeat;
 	margin-top:-7px;
@@ -667,18 +667,18 @@ input {
 	text-align:center;
 }
 
-#buttonInner h2 {
+#buttonInner > h4 {
 	margin:0 0 10px 0;
-	color:#F2F4D4;
-	font-size:94%;
-/*	font-family:Georgia, "Times New Roman", Times, serif;*/
+	font: bold 87% Arial,san-serif;
 }
 
-#buttonInner p {
-	margin-top:10px;
-	font-size:80%;
-	color:#F2F4D4;
-	padding:0;	
+#buttonInner > div {
+  margin-bottom: 0.6em;
+}
+
+#buttonInner div p {
+  font-size: 85%;
+  margin-bottom: -7px;
 }
 
 #petportal {
@@ -749,7 +749,7 @@ input {
 	font-size:12px;
 	font-style:italic;
 	color:#534226;
-	line-height:16px;	
+/*	line-height:16px;	*/
 	margin-bottom:0;
 	padding-bottom:5px;
 }
@@ -765,7 +765,7 @@ input {
 
 #dog {
 	float:left;
-	background:url('../images/bottom-dog.png') bottom left no-repeat;
+	background:url('../images/nintendogs.png') bottom left no-repeat;
 	width:161px;
 	height:211px;
 	margin-right:10px;
@@ -781,7 +781,7 @@ input {
 	background: url('../images/bottom-div.png') no-repeat left bottom;
 	width:954px;
 	position:relative;
-	height:230px;
+	height:236px;
 }
 
 #footerInside {
@@ -797,6 +797,7 @@ input {
 #footerIndex #dogText {
 	width:436px;  
 	float:left;
+	margin-top:20px;
 }
 
 #footerInside p.foot {
@@ -808,7 +809,7 @@ input {
 #footerIndex p.foot {
 	color:#00204b;
 	font-size:65%;
-	margin-top:180px;
+	margin-top:195px;
 }
 
 #footerInside a {
@@ -824,7 +825,7 @@ input {
 	width:472px;
 	min-height:190px; 
 	float:right;
-	background: #871e0b url('../images/bottom-full.png') no-repeat left bottom;
+	background: #878330 url('../images/promotions.jpg') no-repeat left bottom;
 	margin-top:50px;
 	padding:12px 12px;
 	-moz-box-shadow:0px 2px 8px 1px #000;
@@ -865,7 +866,7 @@ input {
 }
 
 #bottom img.border {
-	border:3px solid #f9f9dd;
+	border:3px solid #422C17;
 	margin-bottom:5px;	
 }
 
