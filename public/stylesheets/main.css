@@ -3,14 +3,14 @@
 /* HTML Defaults */
 
 body {
-	font: 100%/1.5em "Century Gothic", Arial, sans-serif;
+	font: 100%/1.5em Arial, Tahoma, sans-serif;
 	color: #00214c;
 	margin: 0;
 	padding: 0;
 }
 
 body.page {
-	color: #00214c;
+	color: #654332;
 	background-color: #6D5035;
 	margin: 0;
 	padding: 0;
@@ -122,12 +122,12 @@ input {
 
 #headerIndex #logo, #headerIndex #logo p, #headerIndex #logo a.log {
 	height:291px;
-	width:361px; 
+	width:370px; 
 }
 
 #header #logo, #header #logo p, #header #logo a.log {
-	height:230px;
-	width:239px; 
+	height:291px;
+	width:370px; 
 }
 
 #logo, #logo p, #logo a.log {
@@ -182,13 +182,14 @@ input {
 	float:left;
 }	
 	
-#topNav ul {
+#topNav > ul {
 	padding:0;
 	margin:0 auto;  
 	height:39px;
 	/*background:url('../images/top-nav-bg.png') top left repeat-x;*/
-	border-radius: 0 0 10px 10px;
-	background-color: #6D5035;
+/*	border-radius: 0 0 10px 10px;*/
+	background-color: #A68055;
+	border-top: 5px solid #6D5035;
 	float:left;
 	z-index:9400;
 	position:relative;
@@ -213,14 +214,14 @@ input {
 }
 
 #nav ul li a {
-	color:#f9f9dd;
-	font-size:110%;
+	color:#2E1C12;
+/*	font-size:110%;*/
 	padding: 0px 14px 0px 17px;
 	white-space: nowrap;
 }
 
 #topNav ul li.on a, #topNav ul li.on ul li a:hover {
-	color:#ffff84;
+	color:#FFFF84;
 }
 	
 #topNav ul li.on ul li a {
@@ -231,12 +232,22 @@ input {
 	margin-right:5px;
 }
 
-#topNav ul li a:hover  {
-	text-decoration:none;	
-	color:#ffff84;	
+#topNav ul li ul li a {
+  color:#BDAD91;
 }
 
-#nav ul li ul, #nav ul li:hover ul li ul, #nav ul li:hover ul li:hover ul li ul {
+#topNav ul li a:hover  {
+	text-decoration:none;	
+	color:#BDAD91;	
+}
+
+#topNav ul li ul li a:hover  {
+  text-decoration:none; 
+  color:#6D5035;  
+}
+
+/*#nav ul li ul, #nav ul li:hover ul li ul, #nav ul li:hover ul li:hover ul li ul {*/
+#nav ul li ul {
 	display: none;
 }
 
@@ -262,7 +273,7 @@ input {
 	height:30px;
 	margin:0;
 	background:none;
-	background-color:#A68055;
+	background-color:#6D5035;
 	float:none;
 }
 
@@ -279,7 +290,7 @@ input {
 }
 
 #nav ul li ul li:hover {
-	background-color:#6f1100;
+	background-color:#9BD000;
 }
 
 #nav ul li.first ul li a {
@@ -296,11 +307,11 @@ input {
 
 
 #lowerNav ul li ul li {
-	background-color:#CABCAD;
+	background-color:#565718;
 }
 
 #lowerNav ul li ul li:hover {
-	background-color:#cccc94;
+	background-color:#9BD000;
 }
 
 #lowerNav ul li ul {
@@ -371,8 +382,8 @@ input {
 	margin:0 auto;  
 	height:32px;
 /*	background:url('../images/home-nav-bg.jpg') top left repeat-x;*/
-  background-color: #CABCAD;
-  border-radius: 0 0 5px 5px;
+  background-color: #565718;
+/*  border-radius: 0 0 5px 5px;*/
 	float:left;
 }
 
@@ -381,11 +392,11 @@ input {
 }*/
 
 #homeNav ul li a {
-	color:#00204b;
+	color:#DBDCBA;
 }
 
 #homeNav ul li a:hover {
-	color:#c73c23;
+	color:#F8F8F1;
 	text-decoration:none;
 }
 
@@ -433,8 +444,8 @@ input {
 
 #topBar #contact {
 	font-family:myriad pro, myriad, verdana, sans-serif;
-	font-size:130%;
-	font-weight:bold;
+	font-size:120%;
+	font-weight:normal;
 	float:left;
 	margin-top:8px;
 }
@@ -480,7 +491,7 @@ input {
 
 #topBar p {
 	margin-left:33px;
-	font-size:125%;
+	font-size:115%;
 	font-weight:bold;
 }
 
@@ -528,7 +539,7 @@ input {
 	/* background:#fef7ed url('../images/content-bg.jpg') bottom left repeat-x;  */
   background:#F2F4D4 bottom left repeat-x;
 	margin:0 auto;
-	padding:3px 17px 13px 17px;
+	padding:3px 17px 30px 17px;
 }
 
 
@@ -632,8 +643,9 @@ input {
 }
 
 #sideMenu + #button {
-	background:url('../images/button-inside.png') top left no-repeat;
-	width:264px;
+	background:url('../images/hourBgd.png') top left no-repeat;
+	width:224px;
+	height:141px;
 	white-space:nowrap;
 	position:absolute;
 	bottom:50px;
@@ -642,7 +654,7 @@ input {
 }
 
 #sideMenu + #button #buttonInner {
-	padding-top:8px;
+	margin-top: 25px;
 }
 
 #sideMenu + #button + #petportal {
@@ -657,9 +669,11 @@ input {
 /*	font-size:130%;*/
 /*	font-weight:bold;*/
 	color:#F2F4D4;
-	background:url('../images/button-full.jpg') top left no-repeat;
+	background:url('../images/hourBgdIdx.png') top left no-repeat;
 	margin-top:-7px;
 	z-index:8500;
+  -moz-box-shadow:0px 2px 8px 1px #000;
+  -webkit-box-shadow: 0px 2px 8px #000;
 }
 
 #buttonInner {
