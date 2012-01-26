@@ -66,12 +66,12 @@
       <!-- END #homeNav -->
       
       <div id="emer">
-<!--         <div id="emerRH"></div> -->
         <div id="emerMid">
-          <% cross_img = image_tag("cross.png", :alt => "emergencies") %>
-          <p><%= link_to "Emergencies&nbsp;&nbsp;#{cross_img}", emergency_path, :title => "Emergencies" %></p>
+          <% link_to emergency_path, :title => "EMERGENCY" do %>
+            <p><%= image_tag("cross15.png") %></p>
+            <p>EMERGENCY</p>
+          <% end %>
         </div>
-<!--         <div id="emerLH"></div> -->
       </div>
       <!-- END #emer -->
     </div>

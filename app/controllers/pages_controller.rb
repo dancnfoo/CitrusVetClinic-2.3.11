@@ -9,8 +9,6 @@ class PagesController < ApplicationController
   # Main page
   def home
     @title = "The Difference is We Care"
-    @header_id = "headerIndex"
-    @footer_id = "footerIndex"
     # CSS highlight class for first menu item
     @link_class = "on"
   end
