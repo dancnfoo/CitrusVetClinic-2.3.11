@@ -4,7 +4,7 @@
 
 body {
 	font: 100%/1.5em Arial, Tahoma, sans-serif;
-	color: #00214c;
+	color: #654332;
 	margin: 0;
 	padding: 0;
 }
@@ -172,7 +172,7 @@ input {
 }	
 	
 #topNav > ul {
-	padding:0;
+	padding:0 10px;
 	margin:0 auto;  
 	height:38px;
 	/*background:url('../images/top-nav-bg.png') top left repeat-x;*/
@@ -209,7 +209,7 @@ input {
 }
 
 #topNav ul li.on a, #topNav ul li.on ul li a:hover {
-	color:#FFFF84;
+	color:#FFF;
 }
 	
 #topNav ul li.on ul li a {
@@ -287,7 +287,7 @@ input {
 
 #lowerNav {
 	clear:both;
-	width:48%;
+	width:52%;
 	float:right;
 	margin-right:120px;
 }
@@ -368,7 +368,7 @@ input {
 }	
 
 #homeNav ul {
-	padding:0;
+	padding:0 14px;
 	margin:0 auto;  
 	height:38px;
 /*	background:url('../images/home-nav-bg.jpg') top left repeat-x;*/
@@ -391,11 +391,11 @@ input {
 }
 
 #homeNav ul li.on a, #topNav ul li.on ul li a:hover {
-	color:#c73c23;
+	color:#ffffff;
 }
 	
 #homeNav ul li.on ul li a {
-	color:#00204b;
+	color:#fff;
 }
 
 #homeNavRH {
@@ -523,13 +523,20 @@ input {
 	margin-top:-1px;
 }
 
+#contentIndex {
+  background: none repeat-x scroll left bottom #F2F4D4;
+  float: left;
+  margin: 0 auto;
+  padding: 35px 45px 30px;
+  width: 886px;
+}
 #content {
-	width:942px;
-	float:left;
-	/* background:#fef7ed url('../images/content-bg.jpg') bottom left repeat-x;  */
+  width:900px;
+  float:left;
+  /* background:#fef7ed url('../images/content-bg.jpg') bottom left repeat-x;  */
   background:#F2F4D4 bottom left repeat-x;
-	margin:0 auto;
-	padding:17px 17px 30px 17px;
+  margin:0 auto;
+  padding:18px 38px 30px;
 }
 
 
@@ -550,13 +557,12 @@ input {
 #rightWrap {
 	float:right;
 	width:250px;
-	min-height:250px;
-	margin-top:-20px;
+	min-height:260px;
 }
 
 #copy {
 	float:left;
-	width:680px;
+	width:650px;
 	position:relative;
 }
 
@@ -572,34 +578,36 @@ input {
 }
 
 #copy img.photo {
-  float: left;
-  margin: 2px 16px 1em 2px;
-  width: 200px;
+  float:left;
+  margin:2px 16px 1em 2px;
+  width:200px;
 }
 
 #copy #address {
-  font-weight: bold;
+  font-weight:bold;
 }
 
 #copy #map {
-  float: right;
+  float:right;
 }
 
 .important {
-  font-size: large;
-  font-weight: bold;
+  font-size:large;
+  font-weight:bold;
 }
 
 #sideMenu {
 	width:212px;
 	float:right;
 	margin-bottom:180px;
+	font-size:95%;
 }
 
 #sideMenu dl {
 	width:212px;
 	float:right;
 	position:relative;
+	margin:0px auto 30px auto;
 }
 
 #sideMenu dt {
@@ -640,7 +648,7 @@ input {
 	white-space:nowrap;
 	position:absolute;
 	bottom:50px;
-	right:-35px;
+	right:-56px;
 	clear:both;
 }
 
@@ -664,6 +672,7 @@ input {
 	z-index:8500;
   -moz-box-shadow:0px 2px 8px 1px #000;
   -webkit-box-shadow: 0px 2px 8px #000;
+  margin-top:-38px;
 }
 
 #buttonInner {
@@ -785,7 +794,7 @@ input {
 /*	background: url('../images/bottom-div.png') no-repeat left bottom;*/
 	width:954px;
 	position:relative;
-	height:236px;
+	height:226px;
 }
 
 #footer #dogText {
@@ -813,11 +822,11 @@ input {
 	min-height:190px; 
 	float:right;
 	background: #878330 url('../images/promotions.jpg') no-repeat left bottom;
-	margin-top:50px;
 	padding:12px 12px;
 	-moz-box-shadow:0px 2px 8px 1px #000;
 	-webkit-box-shadow: 0px 2px 8px #000;
-	margin-right:14px;
+  margin-top:35px;
+	margin-right:40px;
 }
 
 #bottom h3, #bottom h3 a {
@@ -890,11 +899,12 @@ input {
 }
 
 /* tables */
-th, td {
-  border: 1px solid #f9f9dd;
-}
 table {
   border: 1px solid green;
+  font-size: 94%
+}
+th, td {
+  border: 1px solid #f9f9dd;
 }
 
 table, th, tr, td {
@@ -902,7 +912,7 @@ table, th, tr, td {
   border-collapse: collapse;
   color: #f9f9dd;
   background-color: #6D5035;
-  padding: 6px;
+  padding: 7px;
 }
 
 table th {

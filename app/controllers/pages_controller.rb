@@ -2,6 +2,7 @@ class PagesController < ApplicationController
   def initialize
     @header_id = "header"
     @footer_id = "footer"
+    @content_id = "content"
     # Default CSS to highlight menu
     @link_class = "class =\"on\""
   end
@@ -9,6 +10,7 @@ class PagesController < ApplicationController
   # Main page
   def home
     @title = "The Difference is We Care"
+    @content_id = "contentIndex"
     # CSS highlight class for first menu item
     @link_class = "on"
   end
