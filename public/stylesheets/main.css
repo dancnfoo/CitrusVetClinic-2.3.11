@@ -64,9 +64,15 @@ img {
 }
 
 .right {float:right;}
-.imageright {float:right; margin-left:5px;}
+
+.imageright {
+  float:right; 
+  margin-left:10px;
+  margin-bottom:10px;
+}
+
 .left {float:left;}
-.imageleft {float:left; margin-right:5px;}
+.imageleft {float:left; margin-right:10px;}
 
 a:active { outline: none; }
 a:focus { -moz-outline-style: none; }

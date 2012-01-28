@@ -40,6 +40,27 @@
         <%= yield %>
       </div>
       <!-- END #contentInner -->
+      
+      <div id=<%= @footer_id %>>
+        <div id="bottom">
+          <div id="bottomSec1">
+            <% image_promo = image_tag("taiter.jpg", :class => "border") %>
+            <%= link_to image_promo, promotion_path, :title => "Promotion" %>
+            <%= image_tag("paws_icon.png", :class => "imageleft", :alt => "Promotion")%>
+            <h3><%= link_to "Promotions", promotion_path %></h3>
+            <p>Check out our promotions!</p>
+          </div>
+          <div id="bottomSec2">
+            <% image_news = image_tag("clinic.jpg", :class => "border", :alt => "Citrus News") %>
+            <%= link_to image_news, news_path, :title => "Citrus News" %>
+            <%= image_tag("paws_icon.png", :class => "imageleft", :alt =>"Citrus News") %>
+            <h3><%= link_to "Citrus News", news_path %></h3>
+            <p>See what's happening at Citrus!</p>
+          </div>
+        </div>
+        <!-- END #bottom -->
+      </div>
+      <!-- END footer -->
     </div>
     <!-- END content -->
     <div id="copyright">

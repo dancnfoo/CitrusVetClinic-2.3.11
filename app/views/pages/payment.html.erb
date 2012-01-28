@@ -3,15 +3,17 @@
 <% end %>
 <div id="copy">
   <h1>Payment Options</h1>
+  <%= image_tag("/images/payment_options.jpg", :class => "imageright", 
+      :alt => "VISA, MasterCard, American Express, Discover, CareCredit, Personal Check, Cash") %>
   <p>
     At Citrus Veterinary Clinic, we offer a variety of 
-    <%= link_to "payment options", payment_forms_path, :alt => "payment options" %>
+    <%= link_to "payment options", payment_forms_path, :title => "payment options" %>
     for your convenience.  We accept cash, checks, debit, all major credit cards and 
-    <%= link_to "CareCredit", care_credit_path, :alt => "CareCredit" %>.
+    <%= link_to "CareCredit", care_credit_path, :title => "CareCredit" %>.
   </p>
   <p>
     Many pet owners are now purchasing 
-    <%= link_to "Pet Insurance", pet_insurance_path, :alt => "Pet Insurance" %>
+    <%= link_to "Pet Insurance", pet_insurance_path, :title => "Pet Insurance" %>
     to help them afford health care for their pet family members. Please research each 
     pet insurance company you consider to be sure it offers the right plan for your pet.
   </p>

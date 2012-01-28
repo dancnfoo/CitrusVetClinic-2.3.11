@@ -13,6 +13,7 @@ class PagesController < ApplicationController
     @content_id = "contentIndex"
     # CSS highlight class for first menu item
     @link_class = "on"
+    render :layout => "home"
   end
   
   # Contact Us
