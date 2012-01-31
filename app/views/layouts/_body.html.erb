@@ -1,15 +1,27 @@
 <div id="bodyWrap">
   <div id="bar">
     <div id="topBar">
-      <div id="contact">Contact Information:</div>
-      <div id="phone"><p>909-596-1881</p></div>
-      <div id="email"><p><%= mail_to "info@citrusvetclinic.com", "Send us an Email" %></p></div>
-      <div id="directions"><p><%= link_to "Get Directions", contact_path %></p></div>
+      <div id="contact">Contact Us:</div>
+      <div id="phone">
+        <span class="icon"><%= image_tag("../images/phone.png") %></span>
+        <span class="text">909-596-1881</span>
+      </div>
+      <div id="email">
+        <% mail_content = capture do %>
+          <span class="icon"><%= image_tag("../images/email.png") %></span>
+          <span class="text">Send us an Email</span>
+        <% end %>
+        <%= mail_to "info@citrusvetclinic.com", mail_content %>
+      </div>
+      <div id="directions">
+        <% link_to contact_path do %>
+        <span class="icon"><%= image_tag("../images/direction.png") %></span>
+        <span class="text">Get Directions</span>
+        <% end %>
+      </div>
       <div id="social"><p><a href="http://www.facebook.com/pages/Citrus-Veterinary-Clinic/201780673165367" title="Find us on Facebook", target="_blank"></a></p></div>
     </div>
-<!--     <div id="underBar"></div> -->
   </div>
-  <!-- END #bar -->
   
   <div id="contentWrap">
     <div id=<%= @content_id %>>
@@ -19,7 +31,6 @@
           <div id="button">
             <div id="buttonInner">
               <h4>HOURS OF OPERATION</h4>
-<!--               <%= image_tag("button-div.png", :alt => "Button") %> -->
               <div>
                 <p>Mon, Tue, Thur, Fri</p>
                 <p>8:00 am- 5:30 pm</p>
@@ -30,22 +41,12 @@
               </div>
             </div>
           </div>
-          <!--
-          <div id="petportal">
-            <div id="ppLog"><p><%= link_to "Log In", "#", :title => "Pet Portal" %></p></div>
-          </div>
-          -->
         </div>
-        <!-- END #rightWrap -->
         <%= yield %>
       </div>
-      <!-- END #contentInner -->
     </div>
-    <!-- END content -->
     <div id="copyright">
       <p class="foot">Copyright &copy; <%= Time.new.year %> Citrus Veterinary Clinic. All rights reserved.</p>
     </div>
   </div>
-  <!-- END contentWrap -->
 </div>
-<!-- END bodyWrap -->

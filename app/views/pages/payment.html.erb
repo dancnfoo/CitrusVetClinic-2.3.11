@@ -3,8 +3,6 @@
 <% end %>
 <div id="copy">
   <h1>Payment Options</h1>
-  <%= image_tag("/images/payment_options.jpg", :class => "imageright", 
-      :alt => "VISA, MasterCard, American Express, Discover, CareCredit, Personal Check, Cash") %>
   <p>
     At Citrus Veterinary Clinic, we offer a variety of 
     <%= link_to "payment options", payment_forms_path, :title => "payment options" %>
@@ -17,4 +15,6 @@
     to help them afford health care for their pet family members. Please research each 
     pet insurance company you consider to be sure it offers the right plan for your pet.
   </p>
+  <%= image_tag("/images/payment_options.jpg", :class => "imageleft", :width => "150px",
+      :alt => "VISA, MasterCard, American Express, Discover, CareCredit, Personal Check, Cash") %>
 </div>
