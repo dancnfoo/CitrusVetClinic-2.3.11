@@ -5,16 +5,11 @@
 body {
 	font: 100%/1.5em Arial, Tahoma, sans-serif;
 	color: #654332;
+  background-color: #6D5035;
 	margin: 0;
 	padding: 0;
 }
 
-body.page {
-	color: #654332;
-	background-color: #6D5035;
-	margin: 0;
-	padding: 0;
-}
 a {
 	text-decoration: none;
 	color: #a11900;
@@ -25,9 +20,6 @@ a:hover {
 h1, h2, h3, h4, h5, h6, p, ul, ol {
 	margin-top: 0;
 	margin-bottom: .6em;
-}
-h1, h2, h3, h4, h5, h6 {
-	font-weight: normal;
 }
 
 h1 {
@@ -110,7 +102,6 @@ input {
 	float:left;	
 	margin-bottom:20px;
 }
-
 #wrap {
 	width:1018px;
 	margin:0 auto;
