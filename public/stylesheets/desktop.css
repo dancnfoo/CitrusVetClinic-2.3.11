@@ -494,7 +494,7 @@ input {
   background: none repeat-x scroll left bottom #F2F4D4;
   float: left;
   margin: 0 auto;
-  padding: 35px 45px 30px;
+  padding: 35px 45px 0px;
   width: 886px;
 }
 
@@ -573,31 +573,32 @@ input {
 }
 
 #sideMenu dt {
-	color:#6f1200;
 	font-size:140%;
-	border-bottom:1px solid #6f1200;
-	padding-bottom:6px;
+	border-top:3px solid #6D5035;
 	font-style:italic;
-	margin-bottom:6px;
+	background-color:#A68055;
+  padding:6px 0 6px 10px;
+  margin-bottom:4px;
+}
+
+#sideMenu dt a {
+  color:#2E1C12;
 }
 
 #sideMenu dd {
-	margin:0 0 6px 10px;
-
+  margin-left:0px;
+	padding:4px 0 4px 10px;
 }
 
+#sideMenu dd:hover {
+  background-color:#9BD000;
+}
 #sideMenu dd a {
 	color:#654332;
 	font-size:110%;
 }
 
-#sideMenu dd a:hover {
-	color:#6f1200;
-	text-decoration:none;
-}
-
-#sideMenu dd a.on {
-	color:#6f1200;
+#sideMenu a:hover {
 	text-decoration:none;
 }
 
@@ -773,7 +774,7 @@ input {
 
 
 #bottom {
-	width:472px;
+	width:475px;
 	min-height:190px; 
 	float:right;
 	background: #878330 url('../images/promotions.jpg') no-repeat left bottom;
@@ -795,24 +796,24 @@ input {
 	text-decoration:none;
 }
 
-
-
 #bottom p {
-	color:#f9f9dd;	
+	color:#f9f9dd;
+	font-size:90%;
+	text-align:center;
 }
 
 #bottomSec1 {
-	width:220px;
+	width:228px;
 	float:left;
 	position:relative;
 	margin-left:3px;
 }
 
 #bottomSec2 {
-	width:220px;
+	width:228px;
 	position:relative;
 	float:right;
-	margin-right:7px;
+	margin-right:3px;
 }
 
 #bottom img.border {
