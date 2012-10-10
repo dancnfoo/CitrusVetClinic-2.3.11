@@ -51,6 +51,10 @@ class PagesController < ApplicationController
     @title = "Online Pharmacy"
   end
   
+  def popup
+    render :layout => "popup"
+  end
+  
   # Veterinary Services
   def service
     @title = "Veterinary Services"

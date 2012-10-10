@@ -6,6 +6,7 @@ ActionController::Routing::Routes.draw do |map|
   map.news            '/news',                :controller => 'pages', :action => 'news'
   map.new_client      '/new-client',          :controller => 'pages', :action => 'new_client'
   map.pharmacy        '/online-pharmacy',     :controller => 'pages', :action => 'pharmacy'
+  map.popup           '/popup',               :controller => "pages", :action => 'popup'
   
   # Veterinary Service
   map.service           '/veterinary-services',                            :controller => 'pages', :action => 'service'

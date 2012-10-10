@@ -10,6 +10,10 @@ body {
 	padding: 0;
 }
 
+body.popup {
+  margin: 0 auto;
+}
+
 a {
 	text-decoration: none;
 	color: #EF9826;
@@ -506,6 +510,11 @@ input {
   padding:18px 38px 30px;
 }
 
+#content.popup {
+  width:720px;
+  text-align: center;
+  float: none;
+}
 
 #contentInner {
 	float:left;
