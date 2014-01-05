@@ -56,6 +56,8 @@ img {
 	border: none;
 }
 
+.dentalmonth2014 {width:100%;}
+
 .right {float:right;}
 
 .imageright {
@@ -511,9 +513,10 @@ input {
 }
 
 #content.popup {
-  width:860px;
+  width:auto;
   text-align: center;
   float: none;
+  padding:0;
 }
 
 #contentInner {
