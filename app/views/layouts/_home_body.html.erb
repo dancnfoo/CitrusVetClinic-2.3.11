@@ -19,7 +19,7 @@
         <span class="text">Get Directions</span>
         <% end %>
       </div>
-      <div id="social"><p><a href="http://www.facebook.com/pages/Citrus-Veterinary-Clinic/201780673165367" title="Find us on Facebook" target="_blank"></a></p></div>
+      <div id="social"><p><a href="http://www.facebook.com/pages/Citrus-Veterinary-Clinic/201780673165367" title="Find us on Facebook" target="_facebook"></a></p></div>
     </div>
   </div>
   <div id="contentWrap">
@@ -51,7 +51,10 @@
             <%= link_to image_promo, promotion_path, :title => "Promotions" %>
             <%= image_tag("paws_icon.png", :class => "imageleft", :alt => "Promotion")%>
             <h3><%= link_to "Promotions", promotion_path %></h3>
+            <p><%= link_to "Check out our promotions!", promotion_path, :title => "Promotions" %></p>
+            <!--
             <p><%= link_to "Halloween Costume Contest 2012!", "javascript:promotion_of_the_month();", :title => "Promotion of the Month" %></p>
+            -->
           </div>
           <div id="bottomSec2">
             <% image_news = image_tag("clinic.jpg", :class => "border", :alt => "Citrus Online Pharmacy") %>
