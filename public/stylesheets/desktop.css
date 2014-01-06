@@ -871,6 +871,7 @@ table {
   font-size:94%;
   width:100%;
 }
+table.regular {width:auto;}
 th, td {
   border:1px solid #f9f9dd;
 }
