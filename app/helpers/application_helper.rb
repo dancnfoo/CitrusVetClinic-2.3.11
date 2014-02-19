@@ -2,7 +2,7 @@
 module ApplicationHelper
   # Return a title on a per-page basis
   def title
-    base_title = "Citrus Veterinary Clinic"
+    base_title = "Citrus Veterinary Clinic - Veterinarian in La Verne, CA 91750"
     if @title.nil?
       base_title
     else
