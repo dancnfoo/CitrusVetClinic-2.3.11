@@ -475,8 +475,7 @@ input {
 
 #topBar span {
   float:left;
-  font-size:115%;
-  font-weight:bold;
+  font-size:116%;
 }
 
 #topBar a {
@@ -802,9 +801,17 @@ input {
 	font-weight:bold;
 }
 
+#bottom .promotion {
+  color:#ff6060;
+  font-weight:bold;
+}
+
 #bottom h3 a:hover {
-	color:#ffb44e;
 	text-decoration:none;
+}
+
+#bottom #bottomSec2 a:hover {
+  color:#ffb44e;
 }
 
 #bottom p {
@@ -835,7 +842,6 @@ input {
 #bottom img.border:hover{
 	border:3px solid #ffb44e;
 }
-
 
 #slideshow8 {
 	position: relative;

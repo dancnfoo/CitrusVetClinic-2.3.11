@@ -50,8 +50,8 @@
             <% image_promo = image_tag("taiter.jpg", :class => "border") %>
             <%= link_to image_promo, promotion_path, :title => "Promotions" %>
             <%= image_tag("paws_icon.png", :class => "imageleft", :alt => "Promotion")%>
-            <h3><%= link_to "Dental Special February", promotion_path %></h3>
-            <p><%= link_to "Check out our promotions!", promotion_path, :title => "Promotions" %></p>
+            <h3><%= link_to "Dental Special February", promotion_path, :class => "promotion" %></h3>
+            <p><%= link_to "GET 10% OFF THIS MONTH !", promotion_path, :title => "Promotions", :class => "promotion" %></p>
             <!--
             <p><%= link_to "Halloween Costume Contest 2012!", "javascript:promotion_of_the_month();", :title => "Promotion of the Month" %></p>
             -->
@@ -61,7 +61,7 @@
             <%= link_to image_news, "http://www.ourpetsrx.com/citrusvetclinic", :title => "Citrus Online Pharmacy", :target => "Online Pharmacy" %>
             <%= image_tag("paws_icon.png", :class => "imageleft", :alt =>"Citrus Online Pharmacy") %>
             <h3><%= link_to "Citrus Online Pharmacy", "http://www.ourpetsrx.com/citrusvetclinic", :target => "Online Pharmacy" %></h3>
-            <p><%= link_to "... is NOW open!!!", "http://www.ourpetsrx.com/citrusvetclinic", :title => "Citrus Online Pharmacy", :target => "Online Pharmacy" %></p>
+            <p><%= link_to "... is OPEN !!!", "http://www.ourpetsrx.com/citrusvetclinic", :title => "Citrus Online Pharmacy", :target => "Online Pharmacy" %></p>
           </div>
         </div>
       </div>
