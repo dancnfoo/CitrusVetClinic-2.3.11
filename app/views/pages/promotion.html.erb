@@ -5,11 +5,15 @@
   <h1>Promotions</h1>
     
   <dl>
+    <dt><strong>May Heartworm Special</strong></dt>
+    <dd>
+      <% promotion_image = image_tag("HeartwormSpecials2014.png", :class=>"promotion", :alt=>"Heartworm Specials")%>
+      <%= link_to promotion_image, "javascript:promotion_of_the_month()" %>
+    </dd>
     <dt><strong>Complimentary Nail Trim</strong></dt>
-      <dd>
-        When your pets have an anesthetic procedure like surgery or a dental cleaning
-        at our clinic, we will provide a complimentary nail trim as well.
-      </dd>
+    <dd>
+      When your pets have an anesthetic procedure like surgery or a dental cleaning
+      at our clinic, we will provide a complimentary nail trim as well.
     </dd>
     <dt><strong>Frontline Promotion &ndash; 4 months for the price of 3</strong></dt>
     <dd>
@@ -23,7 +27,7 @@
     </dd>
     <dt><strong>2014 Dental Special February!! <span class="expired">Expired</span></strong></dt>
     <dd>
-      <%= render "pages/promotion_of_the_month" %>  
+      <%= image_tag("dentalmonth2014.jpg", :class => "promotion", :alt => "2014 Dental Special February") %>
     </dd>
   </dl>
 </div>

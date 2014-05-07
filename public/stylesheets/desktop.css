@@ -56,7 +56,7 @@ img {
 	border: none;
 }
 
-.dentalmonth2014 {width:100%;}
+.promotion {width:100%;}
 
 .right {float:right;}
 
@@ -75,6 +75,11 @@ img {
   margin-left:10px;
   margin-bottom:10px;
   border:15px solid #EDE4DD;
+}
+
+#appointment {
+  position: relative;
+  z-index: 2;
 }
 
 a:active { outline: none; }
@@ -145,7 +150,6 @@ input {
 	
 #nav {
 	position:relative;
-	z-index:9999;
 	float:right;
 	margin-right:14px;
 	width:100%;
@@ -154,7 +158,6 @@ input {
  	
 #topNav {
 	margin:0px auto;
-	z-index:9300;
 	float:right;
 }
 	
@@ -179,7 +182,6 @@ input {
 	background-color: #A68055;
 	border-top: 6px solid #6D5035;
 	float:left;
-	z-index:9400;
 	position:relative;
 }
 
@@ -237,6 +239,7 @@ input {
 
 #nav ul li:hover ul, #nav ul li.sfhover ul, #nav ul li:hover ul li:hover ul, #nav ul li.sfhover ul li.sfhover ul, #nav ul li:hover ul li:hover ul li:hover ul, #topNav ul li.sfhover ul li.sfhover ul li.sfhover ul {
 	display: block;
+	z-index: 1;
 }
 
 #nav ul li ul {
@@ -245,7 +248,6 @@ input {
 	top:25px;
 	margin:0;
 	left:0;
-	z-index:9200;
 	background:none;
 	-moz-box-shadow:0px 2px 8px 1px #000;
 	-webkit-box-shadow: 0px 2px 8px #000;
@@ -414,7 +416,6 @@ input {
 	background:url('../images/contactinfo.jpg') top left no-repeat;
 	color:#F2F4D4;
 	padding:0px 25px;
-	z-index:9000;
 	position:relative;	
 }
 
@@ -639,7 +640,6 @@ input {
 	height:141px;
 	color:#F2F4D4;
 	background:url('../images/hourBgdIdx.png') top left no-repeat;
-	z-index:8500;
   -moz-box-shadow:0px 2px 8px 1px #000;
   -webkit-box-shadow: 0px 2px 8px #000;
   margin-top:-39px;
@@ -751,7 +751,6 @@ input {
 	width:161px;
 	height:211px;
 	margin-right:10px;
-	z-index:9900;
 	margin-bottom:-13px;
 
 }
@@ -857,7 +856,6 @@ input {
 	position: absolute;
 	top: 0;
 	left: 20px;
-	z-index: 9000;
 	height: 314px;
 	width: 500px;
 	margin: 0 auto;
@@ -866,7 +864,6 @@ input {
 	position: absolute;
 	bottom: 0;
 	left: 20px;
-	z-index: 9100;
 	width: 480px;
 	text-align: center;
 	padding: 5px 10px;
